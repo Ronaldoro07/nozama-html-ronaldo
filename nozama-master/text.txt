@@ -1,0 +1,29 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    endereco VARCHAR(150),
+    email VARCHAR(70) UNIQUE,
+    senha VARCHAR(200) UNIQUE
+    data_nascimento
+);
+
+ALTER TABLE usuarios MODIFY COLUMN senha VARCHAR(200) UNIQUE NOT NULL;
+
+
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero_do_carro INT,
+    horario_funcionamento_inicial TIME,
+    horario_funcionamento_final TIME,
+    dias_de_coleta VARCHAR(10),
+    tipo_de_coleta VARCHAR(20)
+);
+
+PUT atualiza o usuario com base no id
+
+INSERT INTO usuarios (nome, idade, endereco, email, senha) 
+VALUES ('novo_nome', 50, 'rua conde da figueira 122, vila jardim POA', 'novoemail', 'pastelino221');
+
+ALTER TABLE usuarios
+
+ADD COLUMN data_nascimento DATE;

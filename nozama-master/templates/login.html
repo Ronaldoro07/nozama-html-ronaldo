@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/styles_login.css">
+    <title>Site dos Guri!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(241, 173, 250);">
+
+    <!-- Faixa de destaque -->
+    <div class="faixa">NOZAMA</div>
+
+    <!-- Caixa centralizada com o formulário -->
+    <div class="caixa">
+        <form action="/create_usuario" method="post">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required minlength="6">
+            
+            <input type="submit" value="Entrar">
+            <a class="btn"  href="cadastro_usuario.html" value="cadastrar">Cadastrar</a>
+        </form>
+    </div>
+
+</body>
+</html>
